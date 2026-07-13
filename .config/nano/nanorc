@@ -1,0 +1,3 @@
+include "/opt/homebrew/share/nano/*.nanorc"
+include "/opt/homebrew/share/nanorc/*.nanorc"
+include "~/.config/nano/swiftui.nanorc"

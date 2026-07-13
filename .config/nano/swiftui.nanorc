@@ -1,0 +1,21 @@
+syntax "SwiftUI" "\.swift$"
+
+# Base Swift
+color brightmagenta "\<(import|struct|class|enum|protocol|extension|func|var|let|private|public|internal|static|some|in|return|if|else|switch|case|default|for|while|guard|throws|async|await)\>"
+color brightred "@[A-Za-z][A-Za-z0-9_]*"
+color brightgreen "\"([^\"\\]|\\.)*\""
+color brightblue "\<[0-9]+(\.[0-9]+)?\>"
+color cyan "//.*$"
+color cyan start="/\*" end="\*/"
+
+# SwiftUI views
+color brightcyan "\<(View|Text|Image|AsyncImage|Button|Label|Link|Spacer|Divider|ScrollView|List|Form|Section|NavigationStack|NavigationLink|VStack|HStack|ZStack|LazyVStack|LazyHStack|Grid|GridRow|GeometryReader|ForEach|Group|ProgressView|Toggle|Slider|Picker|TextField|SecureField|DatePicker|ColorPicker)\>"
+
+# SwiftUI property wrappers
+color brightred "\<@(State|Binding|StateObject|ObservedObject|Environment|EnvironmentObject|AppStorage|SceneStorage|Published|FocusState|FetchRequest|Namespace)\>"
+
+# Common modifiers
+color yellow "\.(font|fontWeight|foregroundStyle|foregroundColor|background|overlay|padding|frame|clipped|cornerRadius|shadow|opacity|offset|position|alignmentGuide|animation|transition|onAppear|onDisappear|onChange|task|sheet|alert|toolbar|navigationTitle|resizable|scaledToFit|scaledToFill|aspectRatio|lineLimit|lineSpacing)\>"
+
+# Common SwiftUI values
+color brightyellow "\.(leading|trailing|center|top|bottom|infinity|automatic|title|headline|body|caption|bold|regular|semibold|primary|secondary|accentColor)\>"
